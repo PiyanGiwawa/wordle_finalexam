@@ -29,6 +29,9 @@ class GuessRequest(BaseModel):
     game_id: str
     guess: str
 
+@app.get("/health")
+def health_check():
+return {"status": "ok"}
 
 @app.post("/api/new-game")
 def start_new_game():
