@@ -31,7 +31,7 @@ class GuessRequest(BaseModel):
 
 @app.get("/health")
 def health_check():
-return {"status": "ok"}
+    return {"status": "ok"}
 
 @app.post("/api/new-game")
 def start_new_game():
